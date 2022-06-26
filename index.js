@@ -457,3 +457,6 @@
 
 // console.log(findShort("Let's travel abroad shall we"));
 
+
+// const findShort = (s) => s.split(' ').sort((a, b)=> b.length - a.length).pop().length
+// console.log(findShort("Let's travel abroad shall we"));
