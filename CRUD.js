@@ -23,3 +23,6 @@ const filterByValue = (key) =>{
   return data.filter((value) => value.id == key || value.status == key || value.name.includes(key) || value.status.includes(key))
 }
 console.log(filterByValue('Komil'));
+
+
+let name = 'UMAR'
