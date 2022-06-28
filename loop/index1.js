@@ -3,8 +3,8 @@
 // 	return (res > 1) ? res + " ohms" : res + " ohm";
 // }
 
-function filterArray(arr) {
-	var newArr = []
+// function filterArray(arr) {
+// 	var newArr = []
 	
 // 	for(var i=0; i < arr.length; i++){
 // 		if (typeof arr[i] === 'number'){
