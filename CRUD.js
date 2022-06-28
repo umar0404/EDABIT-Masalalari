@@ -27,3 +27,9 @@ console.log(filterByValue('Komil'));
 
 let name = 'UMAR'
 // git push
+let name = 'UMAR'
+// git push
+let name = 'UMAR'
+// git push
+let name = 'UMAR'
+// git push
