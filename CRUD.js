@@ -13,8 +13,13 @@ const data = [
   { id: 12, status: 'passed', name: 'Nizamov Sardorbek' },
 ];
 
-const getStudents = (key) => {
-    let res = data.sort((a,b) => a[key].localeCompare(b[key]))
-    console.log(res);
+// const sortByKey = (key) => {
+//     let res = data.sort((a,b) => a[key].localeCompare(b[key]))
+//     return res;
+// }
+// console.log(sortByKey('name'));
+
+const filterByValue = (key) =>{
+  return data.filter((value) => value.id == key || value.status == key || value.name.includes(key) || value.status.includes(key))
 }
-getStudents('name')
+console.log(filterByValue('Komil'));

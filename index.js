@@ -23,8 +23,8 @@
 
 // 2 - masala.
 // function name(params) {
-    //     var symbol = '!@#$%^&*()_+'
-    //     var str = ''
+//     var symbol = '!@#$%^&*()_+'
+//     var str = ''
 //     var a = params.filter((value) => symbol.includes(value)).length
 //     var b = params.filter(value => typeof value === 'string' && !symbol.includes(value)).length
 //     var c = params.filter((value) => typeof value === 'number').length
@@ -53,8 +53,8 @@
 //     console.log(numberOfArr([1,1,1,1]))
 //     console.log(numberOfArr([1,1,1,2]))
 //     console.log(numberOfArr([2,1,1,1]))
-    
-    // 5 - masala.
+
+// 5 - masala.
 // let ar = [1,2,4,5,6,2,3,5,6,7,8,9];
 // let b = []
 // let result = 0
@@ -65,20 +65,20 @@
 //     let res = false
 //     let num = false
 //     c.map((item,i) =>{
-    //         if (item === value+i+1) {
-        //             // console.log(item, i)
-        //             count++
-        //         }
-        //     })
-        //     if(!res && count >= 2 && !num){
-            //        res = true
-            //        result++
-            //     }else if(res && count < 2){
-                //         res = false
-                //     }
-                //     console.log(result);
-                // })
-                
+//         if (item === value+i+1) {
+//             // console.log(item, i)
+//             count++
+//         }
+//     })
+//     if(!res && count >= 2 && !num){
+//        res = true
+//        result++
+//     }else if(res && count < 2){
+//         res = false
+//     }
+//     console.log(result);
+// })
+
 // 6 - masala.
 // function reverse(num) {
 //     return +`${num}`.split("").sort((a,b)=>b-a).join("")
@@ -460,3 +460,101 @@
 
 // const findShort = (s) => s.split(' ').sort((a, b)=> b.length - a.length).pop().length
 // console.log(findShort("Let's travel abroad shall we"));
+
+// const openOrSenior = (data) => data.map((value) => value[0] >=55 && value[1] >= 7 ? 'Senior' : 'Open')
+// console.log(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]]));
+
+// function funs(a, b) {
+//     var all = a + b;
+//     var res = ''
+//     all.split('').map((v) => {
+//         if (!res.includes(v)) {
+//             res += v
+//         }
+//     })
+//     return res.split('').sort().join('')
+// }
+// console.log(funs('asjhbuds', 'ihjfjasd'));
+
+
+
+// function validatePIN(a) {
+//     if (a.length == 4 || a.length == 6 && +a >= 0) {
+//         a = a.match(/[0-9]/g).join('')
+//         if (a.length == 4) return true
+//         else if (a.length == 6) {
+//             return true
+//         } else return false
+//     } else return false
+// }
+
+// console.log(validatePIN("e534"));
+
+
+// const isTriangle = (a,b,c) => a + b >c &&  b + c >a && a + c > b ? true : false 
+// console.log(isTriangle(7,2,2));
+
+
+
+// function solution(nums){
+    //     let res = []
+    //     if (nums == null) {
+        //         return res
+//     }
+//     else if (nums.sort((a,b) => a - b)) {
+//         return nums
+//     }
+// }
+// console.log(solution([1,2,3,10,5]));
+
+
+// function oddOrEven(array) {
+//     let res = array.reduce((a,b) => a + b, 0)
+//     return res % 2 == 0 ? 'even' : 'odd'
+// }
+// console.log(oddOrEven([0, 1, 5]));
+
+
+
+// function rowSumOddNumbers(n) {
+//     return n.split(' ').filter((v) => v % 2 !==0)
+// }
+
+// console.log(rowSumOddNumbers(42));
+
+// const binaryArrayToNumber = arr => {
+//     let res = arr.join('')
+//     return parseInt(res,2)
+// };
+
+// console.log(binaryArrayToNumber([1,1,1,1]));
+
+
+// function spinWords(sentence){
+//     const sentenceArray = sentence.split(' ');
+//     let result = '';
+//     sentenceArray.map((str, i) => {
+//       if (str.length >= 5){
+//         sentenceArray[i] = str.split('').reverse().join('');
+//       } else {
+//         sentenceArray[i] = str;
+//       }
+//     result = sentenceArray.join(' ');
+//     });
+//   return result;
+//   }
+
+//   console.log(spinWords("This is another test"));
+
+function findOdd(A) {
+    let result = 0;
+    A.sort((a, b) => a - b)
+    console.log(A);
+    A.map((v, i) => {
+        // if (v + 1 == v + 1 && v % 2 == 1) {
+           return v
+        // }
+    })
+}
+
+console.log(findOdd([20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5]));
